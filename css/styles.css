@@ -29,6 +29,10 @@ body {
     color: var(--accent-color);
 }
 
+a {
+    text-decoration: none;
+}
+
 /* header */
 
 ul.site-navigation a {
@@ -52,8 +56,27 @@ ul.site-navigation a {
     color: var(--accent-color);
 }
 
+.contacts-item:hover {
+    color: var(--accent-color);
+}
+
+
+.contacts-item:focus {
+    color: var(--accent-color);
+}
+
 .list {
     list-style: none;
+}
+
+.contacts-item {
+    color: var(--secondary-text-color);
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+
+
 }
 
 
@@ -69,7 +92,7 @@ ul.site-navigation a {
     line-height: 1.43;
     text-align: center;
 
-
+    cursor: pointer;    
 }
 
 .button {
@@ -134,6 +157,48 @@ ul.site-navigation a {
     text-align: center;
 }
 
+/* main portfolio */
+
+.work-list-button {
+    background-color: #F5F4FA;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+
+    cursor: pointer;
+}
+
+.work-list-button:hover {
+    background-color: var(--accent-color);
+}
+
+.work-list-button:focus {
+    background-color: var(--accent-color);
+}
+
+.work-list-button.current {
+    background-color: var(--accent-color);
+}
+
+a h2 {
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+
+}
+
+a p {
+    color: var(--secondary-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+}
+
+
 /* footer */
 
 
@@ -164,4 +229,12 @@ ul.site-navigation a {
     line-height: 1.71;
 
     text-decoration: none;
+}
+
+.footer-contacts-item:hover {
+    color: var(--primary-white-color);
+}
+
+.footer-contacts-item:focus {
+    color: var(--primary-white-color);
 }
