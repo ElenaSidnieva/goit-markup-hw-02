@@ -107,6 +107,14 @@ ul.site-navigation a {
     cursor: pointer;
 }
 
+.button:hover {
+    background-color: #188CE8;
+}
+
+.button:focus {
+    background-color: #188CE8;
+}
+
 .section-title {
     color: var(--primary-text-color);
 
