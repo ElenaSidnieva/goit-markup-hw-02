@@ -3,6 +3,8 @@
     --accent-color: #2196F3;
     --primary-white-color: #FFFFFF;
     --secondary-text-color: #757575;
+    --background-color: #2F303A;
+    --background-light-color: #F5F4FA;
 }
 
 body {
@@ -17,7 +19,7 @@ body {
 .logo {
     color: var(--primary-text-color);
 
-    font-family: Raleway;
+    font-family: Raleway; sans-serif;
     font-size: 26px;
     line-height: 1.14;
 
@@ -72,7 +74,7 @@ ul.site-navigation a {
 .contacts-item {
     color: var(--secondary-text-color);
 
-    font-weight: 400;
+    font-weight: 500;
     font-size: 14px;
     line-height: 1.71;
 
@@ -83,7 +85,7 @@ ul.site-navigation a {
 /* main information */
 
 .hero {
-    background-color: #2F303A;
+    background-color: var(--background-color);
     color: var(--primary-white-color);
 
     font-family: inherit;
@@ -93,6 +95,12 @@ ul.site-navigation a {
     text-align: center;
 
     cursor: pointer;    
+}
+
+.hero-title {
+    text-transform: uppercase;
+    font-weight: 900;
+
 }
 
 .button {
@@ -131,6 +139,8 @@ ul.site-navigation a {
 
     font-size: 14px;
     line-height: 1.15;
+
+    text-transform: uppercase;
 }
 
 .advantages-list-text {
@@ -144,7 +154,7 @@ ul.site-navigation a {
 /* our team */
 
 .our-team {
-    background-color: #F5F4FA;
+    background-color: var(--background-light-color);
 }
 
 .our-team-title {
@@ -168,7 +178,7 @@ ul.site-navigation a {
 /* main portfolio */
 
 .work-list-button {
-    background-color: #F5F4FA;
+    background-color: var(--background-light-color);
 
     font-weight: 500;
     font-size: 16px;
@@ -179,14 +189,17 @@ ul.site-navigation a {
 
 .work-list-button:hover {
     background-color: var(--accent-color);
+    color: var(--primary-white-color);
 }
 
 .work-list-button:focus {
     background-color: var(--accent-color);
+    color: var(--primary-white-color);
 }
 
 .work-list-button.current {
     background-color: var(--accent-color);
+    color: var(--primary-white-color);
 }
 
 a h2 {
@@ -216,7 +229,7 @@ a p {
 }
 
 .address {
-    background-color: #2F303A;
+    background-color: var(--background-color);
 
 }
 
