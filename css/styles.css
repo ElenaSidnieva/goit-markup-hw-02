@@ -1,3 +1,13 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 :root {
     --primary-text-color: rgba(33, 33, 33, 1);
     --accent-color: #2196F3;
@@ -100,6 +110,7 @@ ul.site-navigation a {
 .hero-title {
     text-transform: uppercase;
     font-weight: 900;
+    font-size: 44px;
 
 }
 
