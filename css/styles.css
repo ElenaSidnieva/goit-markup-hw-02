@@ -28,13 +28,12 @@ body {
 
 .logo {
     color: var(--primary-text-color);
-
     font-family: Raleway; sans-serif;
     font-size: 26px;
     line-height: 1.14;
-
     text-decoration: none;
 
+    display: block;
 }
 
 .blue-logo {
@@ -45,7 +44,50 @@ a {
     text-decoration: none;
 }
 
+h1,h2,h3,h4 {
+    margin: 0;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+}
+
 /* header */
+
+.list {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
+}
+
+.nav, .main-nav, .site-navigation, .contacts {
+    display: flex;
+}
+
+.nav {
+    align-items: center;
+}
+
+.site-navigation {
+    margin-left: 93px;
+}
+
+.site-navigation .item + .item {
+    margin-left: 50px;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
 
 ul.site-navigation a {
     color: #212121;
@@ -54,6 +96,12 @@ ul.site-navigation a {
     font-size: 14px;
     line-height: 1.14;
 
+}
+
+.site-navigation .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .site-navigation .link.current {
@@ -68,6 +116,11 @@ ul.site-navigation a {
     color: var(--accent-color);
 }
 
+.contacts {
+    display: flex;
+    margin-left: auto;
+}
+
 .contacts-item:hover {
     color: var(--accent-color);
 }
@@ -77,22 +130,38 @@ ul.site-navigation a {
     color: var(--accent-color);
 }
 
-.list {
-    list-style: none;
-}
-
 .contacts-item {
     color: var(--secondary-text-color);
-
     font-weight: 500;
     font-size: 14px;
     line-height: 1.71;
 
+    display: block;
 
+}
+
+.contacts .item + .item {
+    margin-left: 50px;
 }
 
 
 /* main information */
+
+.section {
+    padding-bottom: 0px;
+}
+
+.section-advantages {
+    padding-bottom: 0;
+}
+
+.section-service {
+    padding-bottom: 94px;
+}
+
+.section .section-title {
+    padding: 0;
+}
 
 .hero {
     background-color: var(--background-color);
@@ -103,8 +172,13 @@ ul.site-navigation a {
     font-size: 44px;
     line-height: 1.43;
     text-align: center;
+    max-width: 1600px;
+    max-height: 600px;
 
-    cursor: pointer;    
+    cursor: pointer;  
+    margin-bottom: 94px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-title {
@@ -112,6 +186,8 @@ ul.site-navigation a {
     font-weight: 900;
     font-size: 44px;
 
+    margin-top: 0;
+    margin-bottom: 40px;
 }
 
 .button {
@@ -134,6 +210,20 @@ ul.site-navigation a {
     background-color: #188CE8;
 }
 
+/* main page button */
+
+.button-hero {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 10px 32px;
+    border: 0;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 200px;
+}
+
+
+
 .section-title {
     color: var(--primary-text-color);
 
@@ -141,9 +231,13 @@ ul.site-navigation a {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 
 /* advantages */    
+
 
 .advantages-list-title {
     color: var(--primary-text-ccolor);
@@ -152,6 +246,19 @@ ul.site-navigation a {
     line-height: 1.15;
 
     text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.advantages-list-title h3 {
+    margin-bottom: 10;
+}
+
+.advantages-list {
+    display: flex;
+}
+
+.advantages-list .advantages-list-item + .advantages-list-item {
+    margin-left: 30px;
 }
 
 .advantages-list-text {
@@ -160,12 +267,35 @@ ul.site-navigation a {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+
+    margin-top: 0;
+    margin-bottom: 94px;
+}
+
+/* service */
+
+.our-team-list {
+    display: flex;
+}
+
+.list-service {
+    display: flex;
+}
+
+.list-service .item-service + .item-service {
+    margin-left: 30px;
+}
+
+.container .list-service {
+    margin-left: 0;
 }
 
 /* our team */
 
 .our-team {
     background-color: var(--background-light-color);
+
+    padding: 94px 94px;
 }
 
 .our-team-title {
@@ -175,6 +305,8 @@ ul.site-navigation a {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+
+    margin-bottom: 10px;
 }
 
 .our-team-member {
@@ -184,9 +316,28 @@ ul.site-navigation a {
     font-size: 16px;
     line-height: 19px;
     text-align: center;
+
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.our-team-list .team-member + .team-member {
+    margin-left: 30px;
 }
 
 /* main portfolio */
+
+.work-list {
+    margin-top: 94px;
+    margin-bottom: 50px;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.work-list .item + .item {
+    margin-left: 8px;
+}
 
 .work-list-button {
     background-color: var(--background-light-color);
@@ -196,6 +347,11 @@ ul.site-navigation a {
     line-height: 1.62;
 
     cursor: pointer;
+
+    display: inline-block;
+    border-radius: 4px;
+    padding: 6px 22px;
+    border: 0px;
 }
 
 .work-list-button:hover {
@@ -213,13 +369,27 @@ ul.site-navigation a {
     color: var(--primary-white-color);
 }
 
+.list-portfolio {   
+    margin-bottom: 94px;
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list-portfolio-item {
+    margin-right: 30px;
+}
+
+.list-portfolio-item:nth-child(3n) {
+    margin-right: 0;
+}
+
 a h2 {
     color: var(--primary-text-color);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-
 }
 
 a p {
@@ -241,6 +411,9 @@ a p {
 
 .address {
     background-color: var(--background-color);
+
+    padding-top: 80px;
+    padding-bottom: 60px;
 
 }
 
