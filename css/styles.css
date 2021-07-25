@@ -57,6 +57,10 @@ h1,h2,h3,h4 {
     margin-top: 0px;
 }
 
+img {
+    display: block;
+}
+
 /* header */
 
 .list {
@@ -285,6 +289,10 @@ ul.site-navigation a {
     display: flex;
 }
 
+.item-service {
+    width: 370px;
+}
+
 .list-service .item-service + .item-service {
     margin-left: 30px;
 }
@@ -409,7 +417,7 @@ a p {
 
 .footer-logo {
     color: var(--primary-white-color);
-
+    display: inline-block;
 }
 
 .address {
