@@ -256,6 +256,10 @@ ul.site-navigation a {
     display: flex;
 }
 
+.advantages-list-item {
+    width: 270px;
+}
+
 .advantages-list .advantages-list-item + .advantages-list-item {
     margin-left: 30px;
 }
